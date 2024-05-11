@@ -1,4 +1,6 @@
 /*using TechTribePro.Repositories;*/
+using TechTribePro.Repositories;
+
 namespace TechTribePro
 {
     public class Program
@@ -10,10 +12,11 @@ namespace TechTribePro
             // Add services to the container.
 
             builder.Services.AddControllers();
-       /*     builder.Services.AddTransient<IUserRepository, UserRepository>();
-            builder.Services.AddTransient<IPaintingRepository, PaintingRepository>();
-            builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
-            builder.Services.AddTransient<IOrderRepository, OrderRepository>();*/
+            builder.Services.AddTransient<IUserRepository, UserRepository>();
+            /* 
+                 builder.Services.AddTransient<IPaintingRepository, PaintingRepository>();
+                 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
+                 builder.Services.AddTransient<IOrderRepository, OrderRepository>();*/
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
