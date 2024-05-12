@@ -10,7 +10,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import { Link } from "react-router-dom";
+
 
 export default function Header({isLoggedIn, setIsLoggedIn}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,11 +54,11 @@ export default function Header({isLoggedIn, setIsLoggedIn}) {
                   <NavLink tag={RRNavLink} to="/users">User Profiles</NavLink>
                 </NavItem> */}
                 <NavItem>
-                  <a aria-current="page" className="nav-link"
+                  <NavLink aria-current="page" className="nav-link"
                     style={{ cursor: "pointer" }} onClick={() => {
                       logout()
                       setIsLoggedIn(false)
-                    }}>Logout</a>
+                    }}>Logout</NavLink>
                 </NavItem>
               </>
             }
