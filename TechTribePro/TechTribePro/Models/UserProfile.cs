@@ -21,7 +21,7 @@ namespace TechTribePro.Models
         public string Email { get; set; }
 
      
-        [DataType(DataType.EmailAddress)]
+        [DataType(DataType.Password)]
         [MaxLength(255)]
         public string Password { get; set; }
 
